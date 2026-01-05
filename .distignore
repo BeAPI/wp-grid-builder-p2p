@@ -1,0 +1,5 @@
+.gitignore
+.plugin-data
+composer.json
+composer.lock
+.github
