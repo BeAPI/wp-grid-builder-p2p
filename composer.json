@@ -1,0 +1,69 @@
+{
+	"name": "beapi/wp-grid-builder-p2p",
+	"description": "Add filtering by P2P connexions for WP Grid Builder.",
+	"type": "wordpress-plugin",
+	"keywords": [
+		"wordpress",
+		"plugin",
+		"addon",
+		"wp-grid-builder",
+		"facet"
+	],
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "BeAPI",
+			"email": "technical@beapi.fr",
+			"homepage":"https://beapi.fr",
+			"role":"Company"
+		}
+	],
+	"config": {
+		"optimize-autoloader": true,
+		"preferred-install": "dist",
+		"sort-packages": true,
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"composer/installers": true,
+			"phpro/grumphp-shim": true
+		},
+		"platform": {
+			"php": "8.3"
+		}
+	},
+	"require": {
+		"php": "8.3.*",
+		"ext-json": "*",
+		"composer/installers": "^1.0 || ^2.0"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "v1.2.0",
+		"overtrue/phplint": "9.6.2",
+		"php-parallel-lint/php-parallel-lint": "v1.4.0",
+		"phpcompatibility/php-compatibility": "^9.3",
+		"phpro/grumphp-shim": "v2.17.0",
+		"roave/security-advisories": "dev-latest",
+		"roots/wordpress-no-content": "^6.0",
+		"squizlabs/php_codesniffer": "^3.7",
+		"vimeo/psalm": "5.26.1",
+		"wp-cli/wp-cli": "^2.6",
+		"wp-coding-standards/wpcs": "3.2.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"WP_Grid_Builder\\P2P_Facet\\": "classes/"
+		}
+	},
+	"autoload-dev": {
+	},
+	"scripts": {
+		"cs": "./vendor/bin/phpcs",
+		"cb": "./vendor/bin/phpcbf",
+		"psalm": "./vendor/bin/psalm"
+	},
+	"scripts-descriptions": {
+		"cs": "Run PHP CodeSniffer on codebase using custom ruleset.",
+		"cb": "Run PHP Code Beautifier and Fixer on codebase using custom ruleset.",
+		"psalm": "Run psalm on codebase using custom ruleset."
+	}
+}

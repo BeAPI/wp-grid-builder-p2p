@@ -1,0 +1,11 @@
+/.git export-ignore
+/.github export-ignore
+/.distignore export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.plugin-data export-ignore
+/CHANGELOG.md export-ignore
+/grumphp.yml export-ignore
+/phpcs.xml.dist export-ignore
+/psalm.xml export-ignore
+/README.md export-ignore
