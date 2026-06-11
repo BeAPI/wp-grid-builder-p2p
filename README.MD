@@ -23,3 +23,8 @@ This plugin add two new type of sources for your facets, Posts to Posts (P2P) co
 ## Changelog
 
 ### 1.0.0
+- Initial release: P2P connection facets for WP Grid Builder.
+
+### 1.0.1
+- Broaden PHP requirement from 8.3 to ^8.0 (supports PHP 8.0 through 8.4).
+- Fix Composer installs on projects running PHP 8.4.

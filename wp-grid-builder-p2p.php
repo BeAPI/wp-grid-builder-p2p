@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP Grid Builder - Posts 2 Posts
-Version: 1.0.0
+Version: 1.0.1
 Version Boilerplate: 3.5.0
 Plugin URI: https://beapi.fr
 Description: Add a P2P connexion facet for the plugin WP Grid Builder
