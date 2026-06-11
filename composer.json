@@ -26,13 +26,10 @@
 			"dealerdirect/phpcodesniffer-composer-installer": true,
 			"composer/installers": true,
 			"phpro/grumphp-shim": true
-		},
-		"platform": {
-			"php": "8.3"
 		}
 	},
 	"require": {
-		"php": "8.3.*",
+		"php": "^8.0",
 		"ext-json": "*",
 		"composer/installers": "^1.0 || ^2.0"
 	},
