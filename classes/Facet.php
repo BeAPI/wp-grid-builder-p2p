@@ -189,7 +189,7 @@ class Facet {
 	public function get_p2p_connexion(): array {
 		static $load_connexions;
 
-		if ( isset( $load_connexions) ) {
+		if ( isset( $load_connexions ) ) {
 			return $load_connexions;
 		}
 
@@ -411,10 +411,11 @@ class Facet {
 					continue;
 				}
 
-				$facet_name_in = "'";
+				$facet_name_in = "'"; //phpcs:ignore Generic.Formatting.MultipleStatementAlignment.NotSameWarning
 				$facet_name_in .= implode( "', '", $names );
 				$facet_name_in .= "'";
 
+				//phpcs:disable WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 				$wpdb->query(
 					$wpdb->prepare(
 						"
@@ -429,6 +430,7 @@ class Facet {
 						$connexion->p2p_to,
 					)
 				);
+				//phpcs:enable
 			}
 		}
 	}
