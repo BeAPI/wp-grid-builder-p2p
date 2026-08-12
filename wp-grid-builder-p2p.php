@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Plugin constants
 define( 'WP_GRID_BUILDER_P2P_FACET_VERSION', '1.0.0' );
-define( 'WP_GRID_BUILDER_P2P_FACET_VIEWS_FOLDER_NAME', 'wp-grid-builder-facetwp' );
+define( 'WP_GRID_BUILDER_P2P_FACET_VIEWS_FOLDER_NAME', 'wp-grid-builder-p2p' );
 
 // Plugin URL and PATH
 define( 'WP_GRID_BUILDER_P2P_FACET_URL', plugin_dir_url( __FILE__ ) );
