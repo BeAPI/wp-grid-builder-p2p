@@ -12,7 +12,7 @@ This plugin add two new type of sources for your facets, Posts to Posts (P2P) co
 
 ### Requirements
 
-* FacetWP 2.3.0 or greater
+* WP Grid Builder v2.0.0 or greater
 
 ### Installation
 
